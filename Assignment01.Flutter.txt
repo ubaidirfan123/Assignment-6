@@ -1,0 +1,137 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          leading: const Text("Ali Siraj"),
+          title: const Text("Chess Board"),
+        ),
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              /// Row 1
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                ],
+              ),
+              /// Row 2
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                ],
+              ),
+              /// Repeat for the remaining rows
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                ],
+              ),
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                ],
+              ),
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                ],
+              ),
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                ],
+              ),
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                ],
+              ),
+              Row(
+                children: [
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                  customContainer(50, 50, Colors.white),
+                  customContainer(50, 50, Colors.black),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+Widget customContainer(double height, double width, Color color) {
+  return Container(
+    height: height,
+    width: width,
+    color: color,
+  );
+}
